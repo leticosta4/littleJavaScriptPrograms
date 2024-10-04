@@ -1,0 +1,78 @@
+:root { 
+    --light-purple: rgb(45, 14, 102);
+    --dark-purple: rgb(28, 8, 65);
+    --white: #ffffff;
+    --black: #000000;
+  }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+    background-color: var(--bg);
+}
+
+#themeBtn{
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    align-self: center;
+    margin-top: 1rem;
+    font-family: fantasy;
+    background-color: var(--bg);
+    color: var(--fontColor);
+    border-color: var(--fontColor);
+}
+
+#text{
+    font-family: fantasy;
+    color: var(--fontColor);
+}
+
+#countingContainer{
+    margin-top: 2rem; /* era 8em */
+    text-align: center;
+}
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+}
+
+#buttonContainer{
+    text-align: center;
+}
+
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--btnBg);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    box-shadow:  3px 6px rgb(172, 165, 216);
+    width: 10em;
+    font-family: fantasy;
+}
+
+.buttons:hover{
+    background-color: var(--btnBgHover);
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--dark-purple);
+    --btnBgHover: var(--light-purple);
+}  
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--light-purple);
+    --btnBgHover: var(--dark-purple);
+}
