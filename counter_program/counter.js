@@ -28,4 +28,4 @@ resetBtn.onclick = function(){
 themeBtn.onclick = function(){
     body.classList.toggle('dark-theme');
     body.classList.toggle('light-theme');
-}
+};

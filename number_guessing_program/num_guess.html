@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing</title>
+    <link rel="stylesheet" href="./num_guess.css">
+</head>
+<body class="light-theme">
+    <button id="themeBtn">change theme</button><br><br>
+    <h1>NUMBER GUESSING PROGRAM</h1>
+    <div id="inputNumbersContainer">
+        <label for="minNum">Enter the minimum limit:</label><br>
+        <input id="minNum" type="number"><br><br>
+        <label for="maxNum">Enter the maximum limit:</label><br>
+        <input id="maxNum" type="number"><br><br>
+        <button id="generateBtn" type="submit" class="buttons">generate the number</button><br><br><br> 
+    </div>
+    <p id="numberStatus"></p><br><br> 
+    <div id="userAnswear">
+        <label for="number">Try to guess the number!</label><br>
+        <p><i>(you have three attempts only)</i></p>
+        <input id="number" type="number"><br><br>
+        <button id="guessBtn" type="submit" class="buttons">guess</button><br><br><br> 
+        <p id="result"></p>
+    </div>
+    <script src="./num_guess.js"></script>
+</body>
+</html>

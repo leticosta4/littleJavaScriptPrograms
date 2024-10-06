@@ -1,0 +1,74 @@
+:root { 
+    --light-purple: rgb(38, 110, 204);
+    --dark-purple: rgb(16, 62, 122);
+    --white: #ebddb7;
+    --black: #070714;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+    font-family: fantasy;
+    background-color: var(--bg);
+}
+
+h1, label, p{
+    color: var(--fontColor);
+}
+
+#themeBtn{
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    align-self: center;
+    font-family: fantasy;
+    background-color: var(--bg);
+    color: var(--fontColor);
+    border-color: var(--fontColor);
+}
+
+#inputNumbersContainer{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#userAnswear {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons{
+    padding: 10px 20px;
+    font-size: 1.5em;
+    color: white;
+    background-color: var(--btnBg);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+    box-shadow:  3px 6px rgb(165, 185, 216);
+    width: 11em;
+    font-family: fantasy;
+}
+
+.light-theme {
+    --bg: var(--white);
+    --fontColor: var(--black);
+    --btnBg: var(--dark-purple);
+    --btnBgHover: var(--light-purple);
+}  
+
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--white);
+    --btnBg: var(--light-purple);
+    --btnBgHover: var(--dark-purple);
+}

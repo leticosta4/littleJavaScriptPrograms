@@ -1,0 +1,18 @@
+// math docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+// js string methods docs: https://www.w3schools.com/js/js_string_methods.asp
+
+//random number between one and six:
+// const min = 50, max = 100;
+// let randomNum = Math.floor(Math.random() * max - min) + min;
+
+//checked property
+
+//ternary operation
+// let age = 18;
+// let msg = age >= 18 ? "you're an adult": "you're a minor";
+
+//metod chaining
+// let username = window.prompt("enter your username: ");
+// username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
+// window.alert(username);
+
