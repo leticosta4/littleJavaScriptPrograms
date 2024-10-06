@@ -1,0 +1,84 @@
+:root { 
+    --light-blue: rgb(153, 188, 233);
+    --dark-blue: rgb(16, 62, 122);
+    --pastel-green: #d9e9b5;
+    --true-black: black;
+    --white: #e6d3a1de;
+    --black: #070714;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 900px;
+    font-family: fantasy;
+    background-color: var(--white);
+}
+
+#themeBtn {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-family: fantasy;
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--black);
+    position: absolute;
+    top: 120px; 
+}
+
+#title{
+    color: var(--dark-blue);
+}
+
+form{
+    position: relative;
+    background-color: var(--pastel-green);
+    padding: 25px;
+    text-align: center;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px; /*talvez colocar cor especifica dps*/
+}
+
+#textBox{
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(0, 0, 0, 0.829);
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: fantasy;
+}
+
+label{
+    color: var(--black);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#convertButton{
+    margin-top: 15px;
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 1.5em;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: fantasy;
+}
+
+#submitButton:hover{
+    background-color: var(--light-blue);
+    color: var(--black);
+}
+
+#result{
+    color: var(--black);
+    font-size: 1.75em;
+    font-weight: bold; 
+} 

@@ -1,6 +1,6 @@
 :root { 
-    --light-purple: rgb(38, 110, 204);
-    --dark-purple: rgb(16, 62, 122);
+    --light-pink: rgb(151, 20, 118);
+    --dark-pink: rgb(100, 12, 78);
     --white: #ebddb7;
     --black: #070714;
 }
@@ -15,7 +15,11 @@ body {
     background-color: var(--bg);
 }
 
-h1, label, p{
+h1{
+    color: var(--btnBg);
+}
+
+label, p{
     color: var(--fontColor);
 }
 
@@ -54,7 +58,7 @@ h1, label, p{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.25s;
-    box-shadow:  3px 6px rgb(165, 185, 216);
+    box-shadow:  3px 6px rgb(192, 119, 174);
     width: 11em;
     font-family: fantasy;
 }
@@ -62,13 +66,13 @@ h1, label, p{
 .light-theme {
     --bg: var(--white);
     --fontColor: var(--black);
-    --btnBg: var(--dark-purple);
-    --btnBgHover: var(--light-purple);
+    --btnBg: var(--dark-pink);
+    --btnBgHover: var(--light-pink);
 }  
 
 .dark-theme {
     --bg: var(--black);
     --fontColor: var(--white);
-    --btnBg: var(--light-purple);
-    --btnBgHover: var(--dark-purple);
+    --btnBg: var(--light-pink);
+    --btnBgHover: var(--dark-pink);
 }
