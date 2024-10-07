@@ -19,7 +19,7 @@ generateBtn.onclick = function(){
     if(min >= max || isNaN(min) || isNaN(max)){
         numberStatus.textContent = "Please enter valid numbers";
     } else {
-        randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+        randomNum = Math.floor(Math.random() * (max - (min + 1))) + (min + 1);
         numberStatus.textContent = "The random number was generated!";
         attempts = 3;
     }
@@ -36,6 +36,8 @@ guessBtn.onclick = function(){
 
     if(isNaN(userNum)|| (userNum < min) || (userNum > max)){
         result.textContent = "Please enter a valid number";
+    } else if(userNum === min || userNum === max){
+        result.textContent = "The limits aren't inclusive";
     } else {
         if(userNum < randomNum){
             attempts -= 1;
@@ -44,7 +46,7 @@ guessBtn.onclick = function(){
             attempts -= 1;
             result.textContent = `TOO HiGH! Try again!\nAttempts left: ${attempts}`;
         } else if (userNum === randomNum){ 
-            result.textContent = "Conograts! You got it right!!";
+            result.textContent = "Congrats! You got it right!!";
             return;
         }
     }
