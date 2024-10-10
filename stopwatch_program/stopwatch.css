@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background-image: url(./praia.jpeg);  
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    color: white;
+    font-family: fantasy;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#myH1{
+    margin-top: -100px;
+    color: #30506b;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:  130vh;
+}
+
+#display{
+    font-size: 5rem;
+    color: #484c59;
+}
+
+#controls button{
+    font-size: 1.5rem;
+    font-family: fantasy;
+    padding: 10px 20px;
+    margin: 7px;
+    min-width: 125px;
+    border-color: blue; 
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+}
+
+#startBtn:hover{
+    background-color: rgba(146, 194, 146, 0.651);
+}
+
+#stopBtn:hover{
+    background-color: rgba(194, 130, 130, 0.651);
+}
+
+#resetBtn:hover{
+    background-color: rgba(85, 122, 177, 0.651);
+}
