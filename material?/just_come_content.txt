@@ -1,18 +1,77 @@
 // math docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
 // js string methods docs: https://www.w3schools.com/js/js_string_methods.asp
 
-//random number between one and six:
+//RANDOM NUMBER between one and six:
 // const min = 50, max = 100;
 // let randomNum = Math.floor(Math.random() * max - min) + min;
 
-//checked property
+//CHECKED PROPERTY
 
-//ternary operation
+//TERNARY OPERATION
 // let age = 18;
 // let msg = age >= 18 ? "you're an adult": "you're a minor";
 
-//metod chaining
+//METHOD CHAINING
 // let username = window.prompt("enter your username: ");
 // username = username.trim().charAt(0).toUpperCase() + username.trim().slice(1).toLowerCase();
 // window.alert(username);
+
+//JS OBJECT
+const person = {
+    firstName: "let",
+    lastName: "almeida",
+    age: 18,
+    isEmployed: true,
+    sayHello: function(){ console.log(`Hii! My name is ${this.firstName}`); }
+    //sayHello: () => { console.log(`Hii! My name is ${this.firstName}`); } //cuidado ao usar isso
+};
+
+console.log(person.name);
+person.sayHello();
+
+
+//STATIC = de classe, e não de objeto
+           bom p variaveis globais
+           uma variável static de certa classe teria o mesmo valor para qualquer objeto da mesma classe
+           properties and methods that belongs to the class itself, not ot an object
+
+//GETTERS E SETTERS
+sabendo que tem os atributos width e height la na classe
+
+set width(newWidth){
+    if(newWidth > 0){ 
+        this._width = newWidth; //this underscore indicates private property
+    } else {
+        console.error("Width must be a positive number");
+    }
+}
+
+get width(){
+    return this._width;
+}
+
+
+//DESTRUCTURING = extract values from arrays and objects, then assign them to variables
+                  [] = to arrays
+                  {} = to objects
+        
+                  from single variables, from arrays, from objects, to functions parameters 
+
+
+
+//DATE OBJECTS
+const d1 = new Date(); //current date - today 
+
+//year, month, day, hour, minute, second, ms
+const d2 = new Date(2024, 0, 1, 2, 3, 4, 5); //Mon Jan 01 2024 02:03:04 GTM-0600
+
+//da p passar milisegundos so - bom p timer
+
+//coisas separadas:
+const year = d1.getFullYear();
+const month = d1.getMonth(); //o resto segue esse mesmo padrao mas minutos e segundos sao no plural
+const dayOfWeek = d1.getDay(); 
+
+//da p setar essas coisas de forma separada tb com "setters" (metodos especificos)
+ 
 
