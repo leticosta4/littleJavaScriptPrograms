@@ -65,3 +65,9 @@ console.log(`$${total.toFixed(2)}`);
 function sum(accumulator, element){
     return accumulator + element; //as if it was previous + next
 }
+
+//setTimeout(callback, delay);
+//clearTimeout(timeoutId) => in cancels a timeout before it triggers
+
+const timeoutId = setTimeout(() => window.alert("hello"), 3000);
+clearTimeout(timeoutId);

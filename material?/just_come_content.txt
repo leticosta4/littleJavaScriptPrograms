@@ -75,3 +75,7 @@ const dayOfWeek = d1.getDay();
 //da p setar essas coisas de forma separada tb com "setters" (metodos especificos)
  
 
+//JS MODULES
+deixar reutilizavel
+usar um 'export' antes do que quiser usar
+no arquivo que quiser usar, chamar um import from e colocar as chaves la de destructing
