@@ -1,0 +1,32 @@
+DOM - DOCUEMNT OBJECT MODEL
+
+- it representates the page i wanna see in the web browser and provides an API to interact with it
+- the browser constructs the DOM when it loads an HTML doc and creates a tree structure with its elements
+- js access the dom to dynamically manipulate it
+
+console.log(docuement);
+console.dir(document);
+
+
+////////////////////
+
+ELEMENTS SELECTORS
+
+document.getElementById()               - element or null
+document.getElementsByClassName()       - html collection, like it was an array
+document.getElementsByTagName()         - html collection, like it was an array
+document.querySelector()                - first element or null
+document.querySelectorAll()             - nodelist, pode ser por um nome de classe, de tag...
+
+
+////////////////////
+
+DOM NAVIGATION
+- normalmente sao acessados depois dos elements SELECTORS
+
+.firstElementChild
+.lastElementChild
+.nextElementSibling
+.previousElementSibling
+.parentElement
+.children
