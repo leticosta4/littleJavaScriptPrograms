@@ -31,3 +31,21 @@ buttons.forEach(button => {
         event.target.style.backgroundColor = "green";
     });
 });
+
+//add an element - but this isnt automatically update into the nodelist
+const newBtn = document.createElement("button");
+newBtn.textContent = "button 5 :)";
+newBtn.classList = "myBtn";
+document.body.appendChild(newBtn);
+
+//just now:
+buttons = document.querySelectorAll(".myBtn"); //thats why its declared with let
+
+//remove an element
+buttons.addEventListener("click", event => {
+    event.target.remove();
+    // buttons = document.querySelectorAll(".myBtn");
+});
+
+//even removing the elements from the dom, they do continue on the nodelist
+//to remove them manually add the code on line 47
