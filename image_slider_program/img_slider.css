@@ -1,0 +1,51 @@
+h1{
+    margin-left: 787px;
+    margin-top: 250px;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    height: 50%;
+    left: 33.5%;
+}
+
+.slider img{
+    display: none;
+    width: 600px;
+    height: 400px;
+}
+
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.previous{
+    left: 0;
+}
+
+.next{
+    left: 28.8%;
+}
+
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+.displaySlide {
+    display: block !important; /* mostrar o slide ativo */
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
